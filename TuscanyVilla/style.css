@@ -1,7 +1,7 @@
 ﻿.container {
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 50px 360px 150px 300px 300px 300px 150px repeat(3,300px) 150px 200px;
+    grid-template-rows: 50px 360px 150px 300px 300px 300px 150px repeat(3,300px) 150px 200px 150px 200px 150px;
 }
 
 nav {
@@ -218,6 +218,9 @@ gridPicOne {
     background-color: red;
     background-image: url('images/3b-348x348.jpg');
     background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
 }
 
 gridPicTwo {
@@ -225,6 +228,9 @@ gridPicTwo {
     grid-column: 3/ span 2;
     /*grid-row: 8 / span 2;*/
     background-color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 gridPicThree {
@@ -234,6 +240,9 @@ gridPicThree {
     background-color: red;
     background-image: url('images/42-348x348.jpg');
     background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 gridPicFour {
@@ -241,6 +250,9 @@ gridPicFour {
     grid-column: 1/ span 2;
     /*grid-row: 10 / span 2;*/
     background-color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 gridPicFive {
@@ -250,6 +262,9 @@ gridPicFive {
     background-color: red;
     background-image: url('images/314-348x348.jpg');
     background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 gridPicSix {
@@ -257,6 +272,9 @@ gridPicSix {
     grid-column: 5/ span 2;
     /*grid-row: 10 / span 2;*/
     background-color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 gridPicSeven {
@@ -266,6 +284,9 @@ gridPicSeven {
     background-color: red;
     background-image: url('images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
     background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 gridPicEight {
@@ -273,6 +294,9 @@ gridPicEight {
     grid-column: 3/ span 2;
     /*grid-row: 12 / span 2;*/
     background-color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 gridPicNine {
@@ -282,6 +306,9 @@ gridPicNine {
     background-color: red;
     background-image: url('images/Villa-Vanna-231-348x348.jpg');
     background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 reviews {
@@ -290,6 +317,7 @@ reviews {
     grid-column: 1/ span6;
     align-items: center;
     flex-direction: column;
+
 }
 
     reviews h1 {
@@ -403,7 +431,7 @@ contact {
     display: flex;
     background-color: #333;
     grid-column: 1/ span6;
-    grid-row: 18;
+    
     align-items: center;
     flex-direction: column;
 }
@@ -420,6 +448,19 @@ contact {
         margin-top: 8px;
     }
 
+contactInfo {
+    display:flex;
+    grid-column:1
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+fieldTwo {
+    display: flex;
+    grid-column:4 /span2;
+    align-items: flex-end;
+    flex-direction: column;
+}
 footer {
     display: flex;
     background-color: #333;
@@ -428,17 +469,13 @@ footer {
     flex-direction: column;
 }
 
-    footer h1 {
+    footer h3 {
         color: white;
         margin-bottom: 0;
         margin-top: 25px;
     }
 
-    footer p {
-        color: white;
-        font-size: 25px;
-        margin-top: 8px;
-    }
+
 
 .button {
     display: flex;
