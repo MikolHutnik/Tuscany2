@@ -1,0 +1,505 @@
+﻿.container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 50px 360px 150px 300px 300px 300px 150px repeat(3,300px) 150px 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 2 / span 5;
+    background-color: #333;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    nav li {
+        float: left;
+    }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            nav li a:hover {
+                background-color: #111;
+            }
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color: #333;
+}
+
+    .logo a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+    }
+
+header {
+    display: flex;
+    background-image: url('images/tuscany-villas-sant-anna_1005x300.jpg');
+    grid-column: 1 /span 5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+}
+
+    header h1 {
+        font-size: 70px;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    header p {
+        color: white;
+        font-size: 25px;
+    }
+
+mapHead {
+    display: flex;
+    background-image: url('images/Versilia.jpg');
+    grid-column: 6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+locations {
+    display: flex;
+    background-color: #333;
+    grid-column: 1/ span6;
+    align-items: center;
+    flex-direction: column;
+}
+
+    locations h1 {
+        color: white;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
+    locations p {
+        color: white;
+        font-size: 25px;
+        margin-top: 8px;
+    }
+
+locationOne {
+    display: flex;
+    grid-column: 1/ span 4;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+    locationOne h1 {
+        margin-left: 25px;
+        margin-bottom: 0;
+    }
+
+    locationOne p {
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+
+locationOnePic {
+    display: flex;
+    grid-column: 5 / span 2;
+    background-image: url('images/italy-mountain-villa.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-right: 45px;
+}
+
+
+locationTwo {
+    display: flex;
+    grid-column: 3/ span 4;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #333;
+}
+
+    locationTwo h1 {
+        color: white;
+        margin-left: 25px;
+        margin-bottom: 0;
+    }
+
+    locationTwo p {
+        color: white;
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+
+locationTwoPic {
+    background-color: #333;
+    display: flex;
+    grid-column: 1/3;
+}
+
+iframe {
+    padding: 35px;
+}
+
+locationThree {
+    display: flex;
+    grid-column: 1/ span 4;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+    locationThree h1 {
+        margin-left: 25px;
+        margin-bottom: 0;
+    }
+
+    locationThree p {
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+
+locationThreePic {
+    display: flex;
+    grid-column: 5 / span 2;
+    background-image: url('images/tuscany-grape-field-nature-51947.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-right: 45px;
+}
+
+amenities {
+    display: flex;
+    background-color: #333;
+    grid-column: 1/ span6;
+    align-items: center;
+    flex-direction: column;
+}
+
+    amenities h1 {
+        color: white;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
+    amenities p {
+        color: white;
+        font-size: 25px;
+        margin-top: 8px;
+    }
+
+gridPicOne {
+    display: flex;
+    grid-column: 1/ span 2;
+    /*grid-row: 8 / span 2;*/
+    background-color: red;
+    background-image: url('images/3b-348x348.jpg');
+    background-size: cover;
+}
+
+gridPicTwo {
+    display: flex;
+    grid-column: 3/ span 2;
+    /*grid-row: 8 / span 2;*/
+    background-color: white;
+}
+
+gridPicThree {
+    display: flex;
+    grid-column: 5/ span 2;
+    /*grid-row: 8 / span 2;*/
+    background-color: red;
+    background-image: url('images/42-348x348.jpg');
+    background-size: cover;
+}
+
+gridPicFour {
+    display: flex;
+    grid-column: 1/ span 2;
+    /*grid-row: 10 / span 2;*/
+    background-color: white;
+}
+
+gridPicFive {
+    display: flex;
+    grid-column: 3/ span 2;
+    /*grid-row: 10 / span 2;*/
+    background-color: red;
+    background-image: url('images/314-348x348.jpg');
+    background-size: cover;
+}
+
+gridPicSix {
+    display: flex;
+    grid-column: 5/ span 2;
+    /*grid-row: 10 / span 2;*/
+    background-color: white;
+}
+
+gridPicSeven {
+    display: flex;
+    grid-column: 1/ span 2;
+    /*grid-row: 12 / span 2;*/
+    background-color: red;
+    background-image: url('images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
+    background-size: cover;
+}
+
+gridPicEight {
+    display: flex;
+    grid-column: 3/ span 2;
+    /*grid-row: 12 / span 2;*/
+    background-color: white;
+}
+
+gridPicNine {
+    display: flex;
+    grid-column: 5/ span 2;
+    /*grid-row: 12 / span 2;*/
+    background-color: red;
+    background-image: url('images/Villa-Vanna-231-348x348.jpg');
+    background-size: cover;
+}
+
+reviews {
+    display: flex;
+    background-color: #333;
+    grid-column: 1/ span6;
+    align-items: center;
+    flex-direction: column;
+}
+
+    reviews h1 {
+        color: white;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
+    reviews p {
+        color: white;
+        font-size: 25px;
+        margin-top: 8px;
+    }
+
+/*carousel*/
+
+carousel {
+    grid-column: 1 / span 6;
+    /*grid-row: 19 /span 2;*/
+    background-color: white;
+}
+
+.carousel-wrapper {
+    height: 200px;
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev {
+    left: 0;
+}
+
+.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+    background-size: cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+
+contact {
+    display: flex;
+    background-color: #333;
+    grid-column: 1/ span6;
+    grid-row: 18;
+    align-items: center;
+    flex-direction: column;
+}
+
+    contact h1 {
+        color: white;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
+    contact p {
+        color: white;
+        font-size: 25px;
+        margin-top: 8px;
+    }
+
+footer {
+    display: flex;
+    background-color: #333;
+    grid-column: 1/ span6;
+    align-items: center;
+    flex-direction: column;
+}
+
+    footer h1 {
+        color: white;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
+    footer p {
+        color: white;
+        font-size: 25px;
+        margin-top: 8px;
+    }
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #555555;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+}
+
+.button3 {
+    background-color: #555555;
+}
+
+.button4 {
+    background-color: #555555;
+}
+
+.button5 {
+    background-color: #555555;
+}
+
+.button6 {
+    background-color: #555555;
+}
+
+.button7 {
+    background-color: #555555;
+}
+
+.button8 {
+    background-color: #555555;
+}
+
+.button9 {
+    background-color: #555555;
+}
+
+.button10 {
+    background-color: #555555;
+}
+
+.button11 {
+    background-color: #555555;
+}
+
+.button12 {
+    background-color: #555555;
+}
